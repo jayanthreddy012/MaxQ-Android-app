@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    tools:context="com.active.maxq.ControlDevice"
+
+
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/box_name"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/box_name" />
+
+        <ImageView
+            android:id="@+id/maxseries"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignStart="@+id/box_name"
+            android:layout_alignTop="@+id/box_name"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/maxseries" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/btnselect"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+
+            android:layout_marginTop="36dp"
+            android:background="@drawable/btn_control"
+            android:text="SELECT"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/btnpower" />
+
+        <Button
+            android:id="@+id/btnup"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/btn_control"
+            android:text="UP"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+
+            android:layout_alignTop="@+id/btnselect"
+            android:layout_alignEnd="@+id/btndown"
+             />
+
+        <Button
+            android:id="@+id/btndown"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginEnd="43dp"
+            android:background="@drawable/btn_control"
+            android:text="DOWN"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_alignTop="@+id/btnpower"
+            android:layout_alignParentEnd="true"
+             />
+
+        <Button
+            android:id="@+id/btnpower"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/btn_control"
+            android:text="ON/OFF"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginEnd="48dp"
+            android:layout_below="@+id/btnselect"
+            android:layout_toStartOf="@+id/btnup"
+            android:layout_marginTop="36dp" />
+
+    </RelativeLayout>
+</LinearLayout>
+
+
+
+
